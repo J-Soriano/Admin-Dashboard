@@ -11,7 +11,7 @@
     --rich-black-fogra-39: #111213ff;
     --eerie-black: #212224ff;
     /* Colors Used */
-    --color-accent2: #b6853b;
+    --color-accent2: #a1a1a1ff; /*#df8d12  */
     --dark-bg-color: #121212;
     --dark-bg-accent: #1a1a1a;
     --small-text-color: #cc9543;
@@ -198,6 +198,7 @@ input[type=text] {
   background-color: var(--dark-bg-accent);
   border-radius: 10px;
   padding: 3vh;
+  border-left: 1vw solid var(--jet);
 }
 .projects h2 {
   font-size: 1.5rem;
