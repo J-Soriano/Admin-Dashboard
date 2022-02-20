@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="icon" type="image/png" href="imgs/Dash_W.png" sizes="96x96">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imgs/dashI.png" sizes="96x96">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Admin Dashboard">
     <meta name="author" content="J-S">
@@ -20,22 +21,24 @@
     <header class="header">
         <div class="headTop">
             <div class="search">
-                <label for="search"><span class="matIcons36L">search</span></label>
+                <label for="search"><span class="searchIcon">search</span></label>
                 <input type="text" id="search" name="searchBar">
             </div>
             <div class="miniProfile">
-                <span class="matIcons36">notifications_active</span>
-                <img class="profilePic" src="/imgs/odinL.png" alt="Profile-Picture" width="50px" height="auto">
-                <h2>John Smith</h2>
+                <span class="bellIcon">notifications_active</span>
+                <img class="profilePicT" src="/imgs/odinL.png" alt="Profile-Picture"">
+                <h2>Odin Johnson</h2>
             </div>
         </div>
         <div class="headBot">
             <div class="greetProfile">
-                <img class="profilePic" src="/imgs/odinL.png" alt="Profile-Picture" width="50px" height="auto">
-                <p>Hi there, </p>
-                <h2>John Smith (@smith)</h2>
+                <img class="profilePicB" src="/imgs/odinL.png" alt="Profile-Picture">
+                <div class="welText">
+                    <p>Hi there, </p>
+                    <h2>Odin Johnson  (@Odin)</h2>
+                </div>
             </div>
-            <div class="headButtons">
+            <div class="headBtns">
                 <button type="button">New</button>
                 <button type="button">Upload</button>
                 <button type="button">Share</button>
@@ -44,52 +47,123 @@
     </header>
     <!-- Sidebar with links -->
     <aside class="sidebar">
-        <h1 class="dashB"><span class="dashbLogo"></span>Dashboard</h1>
+        <h1 class="sidebarHead"><span class="sidebarHicon">dashboard</span>Dashboard</h1>
         <ul class="sidebarNav">
-            <li class="navItem"><a href="#"><span class="matIcons36">home</span> Home</a></li>
-            <li class="navItem"><a href="#"><span class="matIcons36">person</span> Profile</a></li>
-            <li class="navItem"><a href="#"><span class="matIcons36">mode_comment</span> Messages</a></li>
-            <li class="navItem"><a href="#"><span class="matIcons36">watch_later</span></a> History</li>
-            <li class="navItem"><a href="#"><span class="matIcons36">task</span> Tasks</a></li>
-            <li class="navItem"><a href="#"><span class="matIcons36">groups</span> Communities</a></li>
-            <li class="navItem"><a href="#"><span class="matIcons36">settings</span></a> Settings</li>
-            <li class="navItem"><a href="#"><span class="matIcons36">contact_support</span></a> Support</li>
-            <li class="navItem"><a href="#"><span class="matIcons36">verified_user</span></a> Privacy</li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">home</span><h3>Home</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">person</span><h3>Profile</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">mode_comment</span><h3>Messages</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">watch_later</span><h3>History</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">task</span><h3>Tasks</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">groups</span><h3>Communities</h3></a></li>
+            <li id="dashSpace"></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">settings</span><h3>Settings</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">contact_support</span><h3>Support</h3></a></li>
+            <li><a href="#" class="tagItem"><span class="sidebarIcons">verified_user</span><h3>Privacy</h3></a></li>
         </ul>
     </aside>
+    <!-- Main Section -->
     <main class="container">
         <div class="yourProjects">
             <h2>Your Projects</h2>
             <div class="numProjects">
-                <div class="project1"><h3>Project1</h3></div>
-                <div class="project2"><h3>Project2</h3></div>
-                <div class="project3"><h3>Project3</h3></div>
-                <div class="project4"><h3>Project4</h3></div>
-                <div class="project5"><h3>Project5</h3></div>
-                <div class="project6"><h3>Project6</h3></div>
+                <div class="projects">
+                    <h2>Project: Alpha</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    <div class="projecticonList">
+                        <a href="#" class="projectIcons">star</a>
+                        <a href="#" class="projectIcons">visibility</a>
+                        <a href="#" class="projectIcons">share</a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <h2>Project: Bravo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    <div class="projecticonList">
+                        <a href="#" class="projectIcons">star</a>
+                        <a href="#" class="projectIcons">visibility</a>
+                        <a href="#" class="projectIcons">share</a>
+                    </div>                </div>
+                <div class="projects">
+                    <h2>Project: Charlie</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    <div class="projecticonList">
+                        <a href="#" class="projectIcons">star</a>
+                        <a href="#" class="projectIcons">visibility</a>
+                        <a href="#" class="projectIcons">share</a>
+                    </div>                </div>
+                <div class="projects">
+                    <h2>Project: Delta</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    <div class="projecticonList">
+                        <a href="#" class="projectIcons">star</a>
+                        <a href="#" class="projectIcons">visibility</a>
+                        <a href="#" class="projectIcons">share</a>
+                    </div>                </div>
+                <div class="projects">
+                    <h2>Project: Echo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    <div class="projecticonList">
+                        <a href="#" class="projectIcons">star</a>
+                        <a href="#" class="projectIcons">visibility</a>
+                        <a href="#" class="projectIcons">share</a>
+                    </div>                </div>
+                <div class="projects">
+                    <h2>Project: Foxtrot</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    <div class="projecticonList">
+                        <a href="#" class="projectIcons">star</a>
+                        <a href="#" class="projectIcons">visibility</a>
+                        <a href="#" class="projectIcons">share</a>
+                    </div>                </div>
             </div>
         </div>
-        <div class="announcements">
-            <h2>Announcements</h2>
-            <div class="numAnnouncements">
-                <div class="ann1">
-                    <h3>Site Maintenance</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, vehicula laoreet sapien suscipit id. Sed facilisis libero nec lacus sollicitudin interdum.</p>
-                </div>
-                <div class="ann2">
-                    <h3>Community Share Day</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, vehicula laoreet sapien suscipit id. Sed facilisis libero nec lacus sollicitudin interdum.</p>
-                </div>
-                <div class="ann3">
-                    <h3>Updated Private Policy</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, vehicula laoreet sapien suscipit id. Sed facilisis libero nec lacus sollicitudin interdum.</p>
+        <div class="rightContainer">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="numAnnouncements">
+                    <div class="ann1">
+                        <h3>Site Maintenance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    </div>
+                    <div class="ann2">
+                        <h3>Community Share Day</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    </div>
+                    <div class="ann3">
+                        <h3>Updated Private Policy</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius feugiat dui.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="trending">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="otherPeople">
+                    <div class="per1">
+                        <img class="profilePicppl" src="imgs/cool2.png" alt="Profile-Picture">
+                        <div class="peopleTxt">
+                            <p>@Zack <br>Leader</p>
+                        </div>
+                    </div>
+                    <div class="per1">
+                        <img class="profilePicppl" src="imgs/cool3.png" alt="Profile-Picture">
+                        <div class="peopleTxt">
+                            <p>@Timmy <br>Creator</p>
+                        </div>
+                    </div>
+                    <div class="per1">
+                        <img class="profilePicppl" src="imgs/cool1.png" alt="Profile-Picture">
+                        <div class="peopleTxt">
+                            <p>@Kyle <br>Adventurer</p>
+                        </div>
+                    </div>
+                    <div class="per1">
+                        <img class="profilePicppl" src="imgs/cool4.png" alt="Profile-Picture">
+                        <div class="peopleTxt">
+                            <p>@Chad <br>Magician</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
