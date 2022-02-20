@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--jet);
+    --rich-black-fogra-39: #111213ff;
+    --eerie-black: #212224ff;
+    --jet: #333333ff;
+    --quick-silver: #a1a1a1ff;
+  }
+
+  html {
+    font-size: 62.5%; /* Set default font size to 10px */
+    font-family: 'Open Sans', sans-serif;
+    color: white;    
+  }
+
+  body {
+    height: 100vh;
+    width: 100wv;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    
+  }
+
+  .matIcons36 {
+      font-size: 36px;
+      font-family: 'Material Icons';
+  }
+  
+  .matIcons36L {
+    font-size: 36px;
+    font-family: 'Material Icons', outlined;
+}
+
+/* Header  */
+
+.header {
+  border: solid green;
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end:13;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.sidebar{
+  border: solid rgb(235, 14, 179);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 13;
+}
+.container {
+  border: solid blue;
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 13;
+}
