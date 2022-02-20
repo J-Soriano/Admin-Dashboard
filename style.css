@@ -50,7 +50,8 @@
   }
 
   button {
-    color: white;
+    color: var(--dark-bg-color);
+    font-weight: 600;
     background-color: var(--color-accent2);
     border-radius: 2.5rem;
     width: 6vw;
